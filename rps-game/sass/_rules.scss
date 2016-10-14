@@ -1,0 +1,78 @@
+.rules{
+  display:none;
+}
+.rules.active {
+    display: block;
+    width:100%;
+    height: 100%;
+    background-color: $harsh-colour-opacity;
+    border-radius: 5px;
+    position: absolute;
+    color: $light-colour;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+    text-align: center;
+
+    .third{
+      position: relative;
+      height:300px;
+      border-right: 1px $light-colour dashed;
+
+      &:last-child{
+        border-right:none;
+      }
+
+      .rules-inner{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+    }
+  }
+
+.rule-icons{
+
+  i{
+    font-size:5em;
+    display:block;
+
+    &:hover{
+      cursor: pointer;
+      -webkit-animation: twitch 0.5 !important;
+      animation: twitch 0.5s !important;
+    }
+
+  }
+
+  p{
+    margin: 1.5em 0;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+}
+
+
+//Info / Close Button
+
+.rules-menu,.close-rules-menu{
+  position: absolute;
+  left: 1em;
+  top: 1em;
+  font-size: 1.5em;
+  z-index: 4;
+  cursor: pointer;
+}
+
+.rules-menu{
+  color:$harsh-colour;
+}
+
+.close-rules-menu{
+  z-index: 5;
+  color:$light-colour;
+}

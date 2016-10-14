@@ -1,0 +1,133 @@
+// Generic Ui
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background:$bg-colour;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  color:$harsh-colour;
+}
+
+h1,h2,h3{
+  font-weight: bold;
+  padding:1em 0;
+}
+h1{
+  font-size:2em;
+}
+h2{
+  font-size:1.3em;
+}
+h3{
+  font-size:1em;
+}
+
+a{
+  color:$harsh-colour;
+  display: block;
+}
+
+//Game Ui
+.points{
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  bottom: 1em;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.count-box{
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  background-color:$harsh-colour;
+  z-index: 1;
+  font-size: 2em;
+  line-height: 1.5em;
+  font-weight: bold;
+  color: $light-colour;
+}
+
+.count-box.active {
+  width: 200px;
+  height: 200px;
+  -webkit-animation: showScoreBubble 0.7s !important;
+  animation: showScoreBubble 0.7s !important;
+}
+
+.count-box-inner{
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.results{
+  display:none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-animation: showScore 0.7s !important;
+  animation: showScore 0.7s !important;
+  transform: translate(-50%, -50%);
+  width: 200px;
+
+  .active &{
+    display:block;
+  }
+}
+
+
+.play-btn{
+  position: relative;
+  border:2px solid $harsh-colour;
+  border-radius: 50%;
+  background-color: $light-colour;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  margin:0 auto;
+  font-size: 3em;
+  line-height: 2em;
+  font-weight: bold;
+  transform-origin: center;
+
+  i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+  &:hover{
+    // -webkit-animation: twitch 0.5 !important;
+    // animation: twitch 0.5s !important;
+    background-color: $harsh-colour;
+    color:$light-colour;
+  }
+
+}
+
+.split{
+  position:relative;
+
+  &:after{
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width:0px;
+    height: 100%;
+    border: 1px $harsh-colour dashed;
+  }
+}

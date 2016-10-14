@@ -1,0 +1,58 @@
+.human,.computer{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:5em;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+}
+
+.ritual{
+  -webkit-animation: ritual 0.5;
+  -moz-animation: ritual 0.5;
+  -ms-animation: ritual 0.5;
+  -o-animation: ritual 0.5;
+  animation: ritual 0.5s;
+
+  -webkit-animation-iteration-count: 3;
+  -moz-animation-iteration-count: 3;
+  -ms-animation-iteration-count: 3;
+  animation-iteration-count: 3;
+}
+
+.human-hand.ritual{
+  -webkit-animation: humanRitual 0.5;
+  -moz-animation: humanRitual 0.5;
+  -ms-animation: humanRitual 0.5;
+  -o-animation: humanRitual 0.5;
+  animation: humanRitual 0.5s;
+  
+  -webkit-animation-iteration-count: 3;
+  -moz-animation-iteration-count: 3;
+  -ms-animation-iteration-count: 3;
+  animation-iteration-count: 3;
+}
+
+
+//Arrange the Icons so they are facing the correct way
+.fa-hand-rock-o, .fa-hand-paper-o{
+    transform:rotate(90deg);
+  .human &{
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0) rotate(90deg);
+    -moz-transform: matrix(-1, 0, 0, 1, 0px, 0px) rotate(90deg);
+    -ms-transform: matrix(-1, 0, 0, 1, 0, 0) rotate(90deg);
+    -o-transform: matrix(-1, 0, 0, 1, 0, 0) rotate(90deg);
+    transform: matrix(-1, 0, 0, 1, 0, 0) rotate(90deg);
+  }
+}
+.fa-hand-scissors-o{
+  .computer &{
+    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -moz-transform: matrix(-1, 0, 0, 1, 0px, 0px);
+    -ms-transform: matrix(-1, 0, 0, 1, 0, 0);
+    -o-transform: matrix(-1, 0, 0, 1, 0, 0);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+  }
+}

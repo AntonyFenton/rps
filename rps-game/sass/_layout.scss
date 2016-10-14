@@ -1,0 +1,43 @@
+//Reuseable col classes
+.full{
+  width:100%;
+  float:left;
+}
+
+.half{
+  width:50%;
+  float:left;
+  position: relative;
+  height:300px;
+}
+
+.third{
+  width:33.33%;
+  float:left;
+}
+
+.button-container{
+  width:70%;
+  margin:0 auto;
+  text-align: center;
+}
+
+//Game paper scissors containers
+.rps-container{
+  width:50em;
+  margin:0 auto;
+  border-radius: 10px;
+  padding-top:3em;
+  height: 300px;
+}
+
+.rps-inner{
+  float:left;
+  margin:0 auto;
+  position: relative;
+  background:$bg-colour;
+  border:2px solid $harsh-colour;
+  border-radius: 10px;
+  text-align: center;
+  height: 300px;
+}

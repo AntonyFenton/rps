@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Rock Paper Scissors</title>
+	<script src="https://use.fontawesome.com/3d57a76027.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="stylesheets/styles.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+
+  <div class="rps-container">
+    <h1>Rock Paper Scissors</h1>
+
+    <div class="full rps-inner split">
+
+			<!-- Info Button -->
+			<a href="#" class="rules-menu">
+				<i class="fa fa-question-circle"></i>
+			</a>
+
+			<!-- Rules  -->
+			<div class="full rules">
+
+				<a href="#" class="close-rules-menu">
+						<i class="fa fa-times"></i>
+				</a>
+
+				<div class="rule-icons">
+
+					<div class="third">
+						<div class="rules-inner">
+							<i class="fa fa-hand-rock-o fa-lg"></i>
+							<p>Rock beats <br /> Scissors</p>
+							<i class="fa fa-hand-scissors-o fa-lg"></i>
+						</div>
+					</div>
+
+					<div class="third">
+						<div class="rules-inner">
+							<i class="fa fa-hand-paper-o fa-lg"></i>
+							<p>Paper beats <br /> Rock</p>
+							<i class="fa fa-hand-rock-o fa-lg"></i>
+						</div>
+					</div>
+
+					<div class="third">
+						<div class="rules-inner">
+							<i class="fa fa-hand-scissors-o fa-lg"></i>
+							<p>Scissors beats <br /> Paper</p>
+							<i class="fa fa-hand-paper-o fa-lg"></i>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- Feedback message -->
+      <div class="count-box">
+      	<div class="count-box-inner">
+      		<div class="results" id="results"></div>
+      	</div>
+      </div>
+
+			<!-- Computers Half -->
+      <div class="half" id="computer">
+        <h2>Computer</h2>
+				<div class="computer">
+					<i class="fa fa-hand-rock-o fa-lg player computer-hand"></i>
+				</div>
+				<div class="points" id="computer-points">0</div>
+      </div>
+
+			<!-- Humans Half -->
+      <div class="half" id="human">
+        <h2>Human</h2>
+				<div class="human">
+					<i class="fa fa-hand-rock-o fa-lg player human-hand"></i>
+				</div>
+				<div class="points" id="human-points">0</div>
+      </div>
+
+    </div>
+
+		<div class="full">
+			<!-- Go / Play Button -->
+			<div class="button-container">
+				<h3>Click a Hand to Play!</h3>
+				<div class="third">
+					<a href="#rock" class="play-btn" id="rock">
+						<i class="fa fa-hand-rock-o fa-lg"></i>
+					</a>
+				</div>
+
+				<div class="third">
+					<a href ="#paper" class="play-btn" id="paper">
+						<i class="fa fa-hand-paper-o fa-lg "></i>
+					</a>
+				</div>
+
+				<div class="third">
+					<a href="#scissors" class="play-btn" id="scissors">
+						<i class="fa fa-hand-scissors-o fa-lg"></i>
+					</a>
+				</div>
+
+			</div>
+		</div>
+
+  </div>
+	<script src="js/script.js" charset="utf-8"></script>
+</body>
+</html>
